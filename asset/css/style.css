@@ -80,6 +80,7 @@ nav {
     text-decoration: none;
     letter-spacing: 0.05em;
 }
+<<<<<<< HEAD
 .nav-badge .old-price {
   text-decoration: line-through; 
   color: gray;
@@ -89,6 +90,15 @@ nav {
 .nav-badge .new-price {
   font-weight: bold;
   color: var(--color-accent);
+=======
+.nav-badge {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+    color: var(--color-bg);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+>>>>>>> c2482d907301314ea441b49641d784011e6225b2
 }
 
 .hero {
@@ -156,6 +166,7 @@ nav {
 }
 .price-amount {
     font-family: var(--font-display);
+<<<<<<< HEAD
     font-weight: 700;
     text-decoration: line-through; 
     color: gray;
@@ -164,6 +175,11 @@ nav {
   font-weight: bold;
   font-size: 2.5rem;
   color: var(--color-accent);
+=======
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-accent);
+>>>>>>> c2482d907301314ea441b49641d784011e6225b2
 }
 .price-note {
     font-size: 0.8rem;
@@ -445,3 +461,7 @@ footer {
 .btn-whatsapp {
     animation: pulse 2s ease-in-out infinite, fadeInUp 0.8s ease 0.4s both;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c2482d907301314ea441b49641d784011e6225b2
