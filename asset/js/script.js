@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> c2482d907301314ea441b49641d784011e6225b2
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
