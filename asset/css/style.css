@@ -80,6 +80,28 @@ nav {
     text-decoration: none;
     letter-spacing: 0.05em;
 }
+.msg-wrapper {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+.msg {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 15s linear infinite;
+  font-weight: 500;
+}
+.msg-wrapper:hover .msg {
+  animation-play-state: paused;
+}
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .nav-badge .old-price {
   text-decoration: line-through; 
   color: gray;
@@ -89,6 +111,39 @@ nav {
 .nav-badge .new-price {
   font-weight: bold;
   color: var(--color-accent);
+}
+@media screen and (max-width: 768px) {
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "logo badge"
+      "msg msg";
+    row-gap: 12px;
+    padding: 16px 14px;
+  }
+
+  .logo {
+    grid-area: logo;
+    justify-self: start;
+  }
+
+  .nav-badge {
+    grid-area: badge;
+    justify-self: end;
+  }
+
+  .msg-wrapper {
+    grid-area: msg;
+    text-align: center;
+  }
+
+  .msg {
+    padding-left: 100%;
+    animation: scrollText 12s linear infinite;
+    font-size: 14px;
+  }
 }
 
 .hero {
@@ -302,7 +357,6 @@ section {
     font-size: 0.9rem;
     margin-top: 0.25rem;
 }
-
 .audience-section {
     background: linear-gradient(135deg, var(--color-surface), var(--color-surface-elevated));
     border-radius: 24px;
